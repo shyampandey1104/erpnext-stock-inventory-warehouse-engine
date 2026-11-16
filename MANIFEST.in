@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include stock_warehouse *.css
+recursive-include stock_warehouse *.csv
+recursive-include stock_warehouse *.html
+recursive-include stock_warehouse *.ico
+recursive-include stock_warehouse *.js
+recursive-include stock_warehouse *.json
+recursive-include stock_warehouse *.md
+recursive-include stock_warehouse *.png
+recursive-include stock_warehouse *.py
+recursive-include stock_warehouse *.svg
+recursive-include stock_warehouse *.txt
+recursive-exclude stock_warehouse *.pyc
