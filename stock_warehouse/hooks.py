@@ -4,7 +4,7 @@
 app_name = "stock_warehouse"
 app_title = "Erpnext Stock Inventory Warehouse Engine"
 app_publisher = "Shyamkumar Pandey"
-app_description = "Erpnext Stock Inventory Warehouse Engine for Frappe and ERPNext"
+app_description = "Erpnext Stock Inventory Warehouse Engine - Enterprise Multi-DocType Solution for Frappe & ERPNext"
 app_email = "shyampandey1104@gmail.com"
 app_license = "MIT"
 
@@ -16,16 +16,22 @@ app_include_js = "/assets/stock_warehouse/js/stock_warehouse.bundle.js"
 # Document Events
 # ---------------
 doc_events = {
-    "DocType Event": {
-        "on_submit": "stock_warehouse.engine.on_document_submit",
-        "on_cancel": "stock_warehouse.engine.on_document_cancel"
+    "Erpnext Stock Inventory Warehouse Engine Entry": {
+        "validate": "stock_warehouse.services.validator.EnterpriseValidationEngine.validate_compliance_rules",
+        "on_submit": "stock_warehouse.services.integration_service.EnterpriseIntegrationService.verify_remote_status"
     }
 }
 
-# Scheduled Tasks
-# ---------------
+# Scheduled Background Tasks
+# --------------------------
 scheduler_events = {
+    "hourly": [
+        "stock_warehouse.tasks.hourly_sync"
+    ],
     "daily": [
-        "stock_warehouse.engine.daily_scheduled_sync"
+        "stock_warehouse.tasks.daily_reconciliation"
+    ],
+    "weekly": [
+        "stock_warehouse.tasks.weekly_digest"
     ]
 }

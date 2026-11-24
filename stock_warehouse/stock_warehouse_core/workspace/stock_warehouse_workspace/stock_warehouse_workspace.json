@@ -1,30 +1,104 @@
 {
- "charts": [],
- "content": "[{\"type\":\"header\",\"data\":{\"text\":\"Erpnext Stock Inventory Warehouse Engine Workspace\",\"level\":4}}]",
+ "charts": [
+  {
+   "chart_name": "Erpnext Stock Inventory Warehouse Engine Volume Trend",
+   "label": "Erpnext Stock Inventory Warehouse Engine Volume Trend"
+  }
+ ],
+ "content": "[{\"type\": \"header\", \"data\": {\"text\": \"Erpnext Stock Inventory Warehouse Engine Workspace\", \"level\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Erpnext Stock Inventory Warehouse Engine Operations\"}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Audit & Compliance\"}}]",
  "creation": "2026-04-01 10:00:00.000000",
  "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,
- "icon": "octicon octicon-book",
+ "icon": "octicon octicon-package",
  "idx": 0,
  "is_hidden": 0,
  "label": "Erpnext Stock Inventory Warehouse Engine",
- "links": [],
+ "links": [
+  {
+   "label": "Operational Documents",
+   "type": "Card Break"
+  },
+  {
+   "doctype": "Erpnext Stock Inventory Warehouse Engine Entry",
+   "label": "Erpnext Stock Inventory Warehouse Engine Entry",
+   "link_to": "Erpnext Stock Inventory Warehouse Engine Entry",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "label": "Audit & Reports",
+   "type": "Card Break"
+  },
+  {
+   "doctype": "Erpnext Stock Inventory Warehouse Engine Audit Log",
+   "label": "Erpnext Stock Inventory Warehouse Engine Audit Log",
+   "link_to": "Erpnext Stock Inventory Warehouse Engine Audit Log",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "is_query_report": 1,
+   "label": "Erpnext Stock Inventory Warehouse Engine Summary",
+   "link_to": "Erpnext Stock Inventory Warehouse Engine Summary",
+   "link_type": "Report",
+   "type": "Link"
+  },
+  {
+   "label": "Configuration",
+   "type": "Card Break"
+  },
+  {
+   "doctype": "Erpnext Stock Inventory Warehouse Engine Settings",
+   "label": "Erpnext Stock Inventory Warehouse Engine Settings",
+   "link_to": "Erpnext Stock Inventory Warehouse Engine Settings",
+   "link_type": "DocType",
+   "type": "Link"
+  }
+ ],
  "modified": "2026-04-01 10:00:00.000000",
  "modified_by": "Administrator",
  "module": "Stock_Warehouse_Core",
  "name": "Erpnext Stock Inventory Warehouse Engine",
  "owner": "Administrator",
  "public": 1,
- "quick_lists": [],
+ "quick_lists": [
+  {
+   "document_type": "Erpnext Stock Inventory Warehouse Engine Entry",
+   "label": "Recent Erpnext Stock Inventory Warehouse Engine Entries"
+  }
+ ],
  "roles": [
   {
    "role": "System Manager"
+  },
+  {
+   "role": "Accounts User"
   }
  ],
  "sequence_id": 1,
- "shortcuts": [],
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "All Erpnext Stock Inventory Warehouse Engine Entrys",
+   "link_to": "Erpnext Stock Inventory Warehouse Engine Entry",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "label": "System Settings",
+   "link_to": "Erpnext Stock Inventory Warehouse Engine Settings",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "label": "Compliance Digest",
+   "link_to": "Erpnext Stock Inventory Warehouse Engine Summary",
+   "type": "Report"
+  }
+ ],
  "title": "Erpnext Stock Inventory Warehouse Engine"
 }
